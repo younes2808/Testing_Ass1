@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('User can submit the Customer Care form', async ({ page }) => {
   await page.goto('https://parabank.parasoft.com/parabank/index.htm');
 
-  // Go to Customer Care page
+  // Navigate to Customer Care page
   await page.getByRole('link', { name: 'Contact Us' }).click();
 
   // Verify page loaded
